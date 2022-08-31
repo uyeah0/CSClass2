@@ -10,6 +10,12 @@ namespace CSClass2
     {
         static void Main(string[] args)
         {
+            Wanted<string> wantedString = new Wanted<string>("String");
+            Wanted<int> wantedInt = new Wanted<int>(5223);
+            Wanted<double> wantedDouble = new Wanted<double>(52.273);
+            Console.WriteLine(wantedString.Value);
+            Console.WriteLine(wantedInt.Value);
+            Console.WriteLine(wantedDouble.Value);
         }
     }
 }
